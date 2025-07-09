@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca de Livros por ISBN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Buscar Livro por ISBN</h2>
+    <input type="text" id="isbnInput" placeholder="Digite o ISBN">
+    <button onclick="buscarLivro()">Buscar</button>
+
+    <div class="book-info" id="bookInfo" style="display: none;"></div>
+    <button id="salvarBtn" onclick="salvarLivro()" style="display: none;">Salvar</button>
+
+    <div class="saved-books" id="savedBooks">
+      <h3>Livros Salvos</h3>
+      <ul id="listaLivros"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
